@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Link Page</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Roboto, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .mdc-card {
+            padding: 24px;
+            width: 350px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .title {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Customizing the button to look like a Material contained button */
+        .google-btn {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mdc-card mdc-elevation--z4">
+        <h2 class="mdc-typography--headline5 title">Useful Links</h2>
+        <p class="mdc-typography--body2">Click the button below to visit Google.</p>
+        
+        <div class="mdc-card__actions mdc-card__actions--full-bleed">
+            <a href="https://www.google.com" class="mdc-button mdc-button--raised google-btn">
+                <span class="mdc-button__ripple"></span>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">search</i>
+                <span class="mdc-button__label">Go to Google</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script>
+        // Initialize Material ripples for buttons
+        mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-button'));
+    </script>
+</body>
+</html>
