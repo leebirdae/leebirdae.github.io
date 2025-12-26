@@ -44,9 +44,16 @@
         }
 
         .repo-actions .mdc-button {
-            display: block;
+            display: flex;
             margin-bottom: 8px;
             width: 100%;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .repo-actions {
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
@@ -56,7 +63,7 @@
         <h2 class="mdc-typography--headline5 title">Useful Links</h2>
         <p class="mdc-typography--body2">Click the buttons below to visit useful sites.</p>
         
-        <div class="mdc-card__actions mdc-card__actions--full-bleed">
+        <div class="mdc-card__actions mdc-card__actions--full-bleed repo-actions">
             <a href="https://www.google.com" class="mdc-button mdc-button--raised google-btn">
                 <span class="mdc-button__ripple"></span>
                 <i class="material-icons mdc-button__icon" aria-hidden="true">search</i>
@@ -74,26 +81,6 @@
                 <span class="mdc-button__ripple"></span>
                 <i class="material-icons mdc-button__icon" aria-hidden="true">web</i>
                 <span class="mdc-button__label">leebirdae.github.io</span>
-            </a>
-            <a href="https://github.com/leebirdae/WebApplication2" class="mdc-button mdc-button--raised google-btn">
-                <span class="mdc-button__ripple"></span>
-                <i class="material-icons mdc-button__icon" aria-hidden="true">code</i>
-                <span class="mdc-button__label">WebApplication2</span>
-            </a>
-            <a href="https://github.com/leebirdae/WebApplication1" class="mdc-button mdc-button--raised google-btn">
-                <span class="mdc-button__ripple"></span>
-                <i class="material-icons mdc-button__icon" aria-hidden="true">code</i>
-                <span class="mdc-button__label">WebApplication1</span>
-            </a>
-            <a href="https://github.com/leebirdae/helloWorld" class="mdc-button mdc-button--raised google-btn">
-                <span class="mdc-button__ripple"></span>
-                <i class="material-icons mdc-button__icon" aria-hidden="true">code</i>
-                <span class="mdc-button__label">helloWorld</span>
-            </a>
-            <a href="https://github.com/leebirdae/exampleAppAndroid" class="mdc-button mdc-button--raised google-btn">
-                <span class="mdc-button__ripple"></span>
-                <i class="material-icons mdc-button__icon" aria-hidden="true">android</i>
-                <span class="mdc-button__label">exampleAppAndroid</span>
             </a>
             <a href="https://github.com/leebirdae/pygrow" class="mdc-button mdc-button--raised google-btn">
                 <span class="mdc-button__ripple"></span>
